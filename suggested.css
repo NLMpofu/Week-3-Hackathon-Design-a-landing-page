@@ -1,0 +1,214 @@
+:root {
+    /* Here is our original colour pallett */
+    --color-darkpurple: #210124;
+    --color-outerspacegrey: #4C5B61;
+    --color-lemonchiffon: #F2EFC7;
+    --color-linen: #FFEEE2;
+    --color-dun: #D2BBA0;
+    /* Few more similar options along the same style */
+    --color-argentinianblue: #5DA9E9;
+    --color-honeydew: #E5F4E3;
+    --color-ultraviolet: #52489C;
+    --color-lightcoral: #EE7674;
+    --color-azure: #4B7B9F;
+    --color-wisteria: #B497D6;
+    /* Here are the two logo options */
+    --color-tanlogocolor: #D2BBA0;
+    --color-tealcolor: #77ACA2;
+    /* Here are some basic inbuilt fonts we can use (if we use any Google fonts we have to embed them into HTML*/
+    --gillsans: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    --segoeui: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --arial: Arial, Helvetica, sans-serif;
+    --timesnewroman: 'Times New Roman', Times, serif;
+    --couriernew: 'Courier New', Courier, monospace;
+}
+
+/* CHANGE TO FLEXBOX LATER (CTFL) */
+
+html {
+    background-image: url("background.jpg");
+    background-size: cover;
+}
+
+#burger {
+    width: 120px
+}
+
+#applynow {
+    position:absolute;
+    top: 15px;
+    right: 40px;
+    width: 300px;
+    padding: 40px 40px 40px 40px;
+    background-color: #C179B9;
+    color: black;
+    font-size: 30px;
+    font-family: var(--segoeui);
+}
+
+/* CTFL. */
+#logo {
+    position:absolute;
+    width: 180px;
+    top: 15px;
+    left: 840px;
+}
+
+/* CTFL */
+/* #pageimage {
+    position:absolute;
+    height: 750px;
+    width: 960px;
+    top: 220px;
+    left: 480px;
+} */
+
+/* CTFL */
+#slogan {
+    font-family: var(--segoeui);
+    color: white;
+    position:absolute;
+    top: 460px;
+    left: 380px;
+    max-width: 500px;
+    text-align: left;
+    font-size: 75px;
+    text-shadow: 1px 1px 1px black;
+}
+
+/* CTFL */
+#leftmenu {
+    position:absolute;
+    background-color: var(--color-dun);
+    top: 160px;
+    left: 0px;
+    width: 300px;
+    padding: 20px 20px 20px 20px;
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: var(--segoeui)
+}
+
+#sponsorsbox {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    bottom: 20px;
+    left: 790px;
+    width: 100px;
+}
+
+#contactbox {
+    background-color: var(--color-dun);
+    position:absolute;
+    top: 220px;
+    right: 20px;
+    padding-bottom: 300px;
+    padding-top: 80px;
+    padding-right: 40px;
+    padding-left: 70px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+.sponsor {
+    width: 100px;
+}
+
+form {
+    padding-bottom: 50px;
+    font-family: var(--segoeui);
+    font-weight: bold;
+}
+
+#certified {
+    width: 240px;
+    position: absolute;
+    bottom: 50px;
+    right: 30px;
+}
+
+#submitbutton {
+    width: 100px;
+    height: 25px;
+    border-radius: 12%;
+}
+
+footer {
+    position:absolute;
+    background-color: var(--color-darkpurple);
+    bottom: 0px;
+    color: black;
+    font-size: 15px;
+    font-family: var(--segoeui);
+    color: white;
+    text-align: center;
+    width: 2000px;
+}
+
+#donate {
+    position:absolute;
+    bottom: 40px;
+    left: 380px;
+    width: 250px;
+    padding: 10px 10px 10px 10px;
+    background-color: var(--color-tealcolor);
+    color: black;
+    font-size: 30px;
+    font-family: var(--segoeui);
+}
+/* Here's if we want to dive into flexbox straight away */
+
+/* Basic flex box */
+/* .container {
+    display: flex;
+} */
+
+/* In a row from right to left */
+/* .container {
+    display: flex;
+    flex-direction: row;
+} */
+
+/* In a column from up to down */
+/* .container {
+    display: flex;
+    flex-direction: column;
+} */
+
+/* Wrap to one line */
+/* .container {
+    display: flex;
+    flex-wrap: wrap;
+} */
+
+/* Wrap columns instead */
+/* .container {
+    display: flex;
+    flex-flow: column wrap;
+} */
+
+/* Space out the items in a row (use space around or space evenly for less of a gap) */
+/* .container {
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* Space out the items in a column */
+/* .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+/* Set the gap between two items in a flexbox (row and/or column)*/
+/* .container {
+    display: flex;
+    justify-content: space-between;
+    row-gap: 10px;
+    column-gap: 20px;
+} */
+
+/* Here's if we want to create an unresponsive MVP */
